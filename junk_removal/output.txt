@@ -1,0 +1,253 @@
+100a63e2    [001]    push 0x8beef346                                                                                        (mem writes: 000ffffc)
+100a63e7    [002]    push dword ptr [esp]                                                                                   (mem writes: 000ffff8)
+100a63ea    [003]    mov dword ptr [esp + 4], 0x6fdd8840                                                                    (mem writes: 000ffffc)
+100a63f2    [004]    mov byte ptr [esp], dh                   dh                                                            (mem writes: 000ffff8)
+100a63f5    [005]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000ffff4 000fffec 000fffe8 000fffe4 000ffff0 000fffe0 000fffdc 000fffd8)
+100a63f6    [006]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000fffd0 000fffcc 000fffc8 000fffc4 000fffd4 000fffc0 000fffbc 000fffb8)
+100a63f7    [007]    mov dword ptr [esp + 0x40], 0x2383346b                                                                 (mem writes: 000ffff8)
+100a63ff    [008]    mov byte ptr [esp + 8], 0x5d                                                                           (mem writes: 000fffc0)
+Removing 000ffff4 because esp = 000ffff8
+Removing 000ffff0 because esp = 000ffff8
+Removing 000fffec because esp = 000ffff8
+Removing 000fffe8 because esp = 000ffff8
+Removing 000fffe4 because esp = 000ffff8
+Removing 000fffe0 because esp = 000ffff8
+Removing 000fffdc because esp = 000ffff8
+Removing 000fffd8 because esp = 000ffff8
+Removing 000fffd4 because esp = 000ffff8
+Removing 000fffd0 because esp = 000ffff8
+Removing 000fffcc because esp = 000ffff8
+Removing 000fffc8 because esp = 000ffff8
+Removing 000fffc4 because esp = 000ffff8
+Removing 000fffc0 because esp = 000ffff8
+Removing 000fffbc because esp = 000ffff8
+Removing 000fffb8 because esp = 000ffff8
+100a6404    [009]    lea esp, dword ptr [esp + 0x40]                                                                        (mem writes: )
+100a6408    [010]    jmp 0x100c8e85                                                                                         (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c8e85    [011]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000ffff4 000fffec 000fffe8 000fffe4 000ffff0 000fffe0 000fffdc 000fffd8)
+100c8e86    [012]    pushfd                                   af cf df if of pf sf tf zf                                    (mem writes: 000fffd4)
+100c8e87    [013]    pushfd                                   af cf df if of pf sf tf zf                                    (mem writes: 000fffd0)
+100c8e88    [014]    mov dword ptr [esp + 0x24], eax          eax                                                           (mem writes: 000ffff4)
+100c8e8c    [015]    push eax                                 eax                                                           (mem writes: 000fffcc)
+100c8e8d    [016]    pushfd                                   af cf df if of pf sf tf zf                                    (mem writes: 000fffc8)
+100c8e8e    [017]    mov dword ptr [esp + 0x28], edx          edx                                                           (mem writes: 000ffff0)
+100c8e92    [018]    pushfd                                   af cf df if of pf sf tf zf                                    (mem writes: 000fffc4)
+100c8e93    [019]    mov byte ptr [esp + 4], 0x6f                                                                           (mem writes: 000fffc8)
+100c8e98    [020]    call 0x100c87bd                                                                                        (mem writes: 000fffc0)
+100c87bd    [021]    jmp 0x100c895e                                                                                         (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c895e    [022]    mov dword ptr [esp + 0x2c], ebp          ebp                                                           (mem writes: 000fffec)
+100c8962    [023]    pushfd                                   af cf df if of pf sf tf zf                                    (mem writes: 000fffbc)
+100c8963    [024]    call 0x100c8a92                                                                                        (mem writes: 000fffb8)
+100c8a92    [025]    mov dword ptr [esp + 0x30], ebx          ebx                                                           (mem writes: 000fffe8)
+100c8a96    [026]    mov byte ptr [esp], dh                   dh                                                            (mem writes: 000fffb8)
+100c8a99    [027]    mov byte ptr [esp], ah                   ah                                                            (mem writes: 000fffb8)
+100c8a9c    [028]    push edi                                 edi                                                           (mem writes: 000fffb4)
+100c8a9d    [029]    jmp 0x100c8d55                                                                                         (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c8d55    [030]    mov dword ptr [esp + 0x30], esi          esi                                                           (mem writes: 000fffe4)
+100c8d59    [031]    mov byte ptr [esp + 4], ch               ch                                                            (mem writes: 000fffb8)
+100c8d5d    [032]    mov dword ptr [esp + 0x2c], edi          edi                                                           (mem writes: 000fffe0)
+100c8d61    [033]    mov word ptr [esp], 0x79d1                                                                             (mem writes: 000fffb4)
+100c8d67    [034]    mov byte ptr [esp], cl                   cl                                                            (mem writes: 000fffb4)
+100c8d6a    [035]    mov dword ptr [esp + 0x28], ebx          ebx                                                           (mem writes: 000fffdc)
+100c8d6e    [036]    push ebx                                 ebx                                                           (mem writes: 000fffb0)
+100c8d6f    [037]    push ecx                                 ecx                                                           (mem writes: 000fffac)
+100c8d70    [038]    push edi                                 edi                                                           (mem writes: 000fffa8)
+Removing 000fffd8 because esp = 000fffdc
+Removing 000fffd4 because esp = 000fffdc
+Removing 000fffd0 because esp = 000fffdc
+Removing 000fffcc because esp = 000fffdc
+Removing 000fffc8 because esp = 000fffdc
+Removing 000fffc4 because esp = 000fffdc
+Removing 000fffc0 because esp = 000fffdc
+Removing 000fffbc because esp = 000fffdc
+Removing 000fffb8 because esp = 000fffdc
+Removing 000fffb4 because esp = 000fffdc
+Removing 000fffb0 because esp = 000fffdc
+Removing 000fffac because esp = 000fffdc
+Removing 000fffa8 because esp = 000fffdc
+100c8d71    [039]    lea esp, dword ptr [esp + 0x34]                                                                        (mem writes: )
+100c8d75    [040]    jmp 0x100c8c80                                                                                         (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c8c80    [041]    bswap si                                 si                             si                             (mem writes: )
+100c8c83    [042]    not si                                   si                             si                             (mem writes: )
+100c8c86    [043]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000fffd0 000fffcc 000fffc8 000fffc4 000fffd8 000fffd4 000fffc0 000fffbc)
+100c8c87    [044]    pushfd                                   af cf df if of pf sf tf zf                                    (mem writes: 000fffb8)
+Removing 000fffb8 because esp = 000fffbc
+100c8c89    [045]    pop dword ptr [esp + 0x1c]                                                                             (mem writes: 000fffd8)
+100c8c8d    [046]    shld si, di, cl                          cf of pf sf zf cl di si        cf of pf sf zf si              (mem writes: )
+100c8c91    [047]    jmp 0x100c7dbd                                                                                         (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c7dbd    [048]    mov dword ptr [esp + 0x18], ecx          ecx                                                           (mem writes: 000fffd4)
+100c7dc1    [049]    bsf di, si                               di si                          zf di                          (mem writes: )
+100c7dc5    [050]    push dword ptr [0x100c6d15]                                                                            (mem writes: 000fffb8)
+Removing 000fffb8 because esp = 000fffbc
+100c7dcb    [051]    pop dword ptr [esp + 0x14]                                                                             (mem writes: 000fffd0)
+100c7dcf    [052]    movzx cx, bl                             bl                             cx                             (mem writes: )
+100c7dd3    [053]    xadd edi, ebp                            ebp edi                        ebp af cf of pf sf zf edi      (mem writes: )
+100c7dd6    [054]    mov dword ptr [esp + 0x10], 0                                                                          (mem writes: 000fffcc)
+100c7dde    [055]    cmc                                      cf                             cf                             (mem writes: )
+100c7ddf    [056]    jmp 0x100c7c7b                                                                                         (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c7c7b    [057]    mov esi, dword ptr [esp + 0x40]                                         esi                            (mem writes: )
+100c7c7f    [058]    bts di, ax                               di ax                          di cf                          (mem writes: )
+100c7c83    [059]    btr di, 4                                di                             di cf                          (mem writes: )
+100c7c88    [060]    add esi, 0x1644be2b                      esi                            af cf of pf sf zf esi          (mem writes: )
+100c7c8e    [061]    neg di                                   di                             af cf of pf sf zf di           (mem writes: )
+100c7c91    [062]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000fffb0 000fffac 000fffa8 000fffa4 000fffb8 000fffb4 000fffa0 000fff9c)
+100c7c92    [063]    clc                                                                     cf                             (mem writes: )
+100c7c93    [064]    xor esi, 0x69d1f651                      esi                            cf of pf sf zf esi             (mem writes: )
+100c7c99    [065]    mov word ptr [esp], 0xfaa6                                                                             (mem writes: 000fff9c)
+100c7c9f    [066]    or edi, eax                              eax edi                        cf of pf sf zf edi             (mem writes: )
+100c7ca1    [067]    xchg di, bp                              bp di                          bp di                          (mem writes: )
+100c7ca4    [068]    not esi                                  esi                            esi                            (mem writes: )
+100c7ca6    [069]    and bp, 0x4b2b                           bp                             bp cf of pf sf zf              (mem writes: )
+100c7cab    [070]    rcr bl, cl                               bl cf cl of                    bl cf of                       (mem writes: )
+100c7cad    [071]    dec bp                                   bp                             bp af of pf sf zf              (mem writes: )
+100c7cb0    [072]    stc                                                                     cf                             (mem writes: )
+100c7cb1    [073]    lea ebp, dword ptr [esp + 0x30]                                         ebp                            (mem writes: )
+100c7cb5    [074]    bts bx, bp                               bp bx                          cf bx                          (mem writes: )
+100c7cb9    [075]    rcl bx, 4                                cf of bx                       cf of bx                       (mem writes: )
+100c7cbd    [076]    add di, di                               di                             af cf of pf sf zf di           (mem writes: )
+100c7cc0    [077]    neg bx                                   bx                             af cf of pf sf zf bx           (mem writes: )
+100c7cc3    [078]    sub esp, 0x90                                                           af cf of pf sf zf              (mem writes: )
+100c7cc9    [079]    push esp                                                                                               (mem writes: 000fff08)
+100c7cca    [080]    lea edi, dword ptr [esp + 4]                                            edi                            (mem writes: )
+Removing 000fff08 because esp = 000fff0c
+100c7cce    [081]    lea esp, dword ptr [esp + 4]                                                                           (mem writes: )
+100c7cd2    [082]    adc bl, dl                               bl cf dl                       af cf of pf sf zf bl           (mem writes: )
+100c7cd4    [083]    mov ebx, esi                             esi                            ebx                            (mem writes: )
+100c7cd6    [084]    dec al                                   al                             af of pf sf zf al              (mem writes: )
+100c7cd8    [085]    xor cl, cl                               cl                             cf of pf sf zf cl              (mem writes: )
+100c7cda    [086]    cmc                                      cf                             cf                             (mem writes: )
+100c7cdb    [087]    cmp esi, 0xae51dbba                      esi                            af cf of pf sf zf              (mem writes: )
+100c7ce1    [088]    add esi, dword ptr [ebp]                 ebp esi                        af cf of pf sf zf esi          (mem writes: )
+100c7ce4    [089]    clc                                                                     cf                             (mem writes: )
+100c7ce5    [090]    not cl                                   cl                             cl                             (mem writes: )
+100c7ce7    [091]    mov al, byte ptr [esi]                   esi                            al                             (mem writes: )
+100c7ce9    [092]    shr cl, 3                                cf of pf sf zf cl              cf of pf sf zf cl              (mem writes: )
+100c7cec    [093]    rol cl, 6                                cl                             cf cl of                       (mem writes: )
+100c7cef    [094]    add al, bl                               bl al                          af cf of pf sf zf al           (mem writes: )
+100c7cf1    [095]    movsx cx, dl                             dl                             cx                             (mem writes: )
+100c7cf5    [096]    rcl ch, 2                                cf ch of                       cf ch of                       (mem writes: )
+100c7cf8    [097]    movzx cx, al                             al                             cx                             (mem writes: )
+100c7cfc    [098]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000fff08 000fff04 000ffeec 000ffef0 000fff00 000ffefc 000ffef8 000ffef4)
+100c7cfd    [099]    rol al, 7                                al                             cf al of                       (mem writes: )
+100c7d00    [100]    or ch, dl                                dl ch                          cf of pf sf zf ch              (mem writes: )
+100c7d02    [101]    shrd cx, di, 6                           cf of pf sf zf cx di           cf of pf sf zf cx              (mem writes: )
+100c7d07    [102]    shl cl, cl                               cf of pf sf zf cl              cf of pf sf zf cl              (mem writes: )
+100c7d09    [103]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000ffee4 000ffee8 000ffecc 000ffed0 000ffedc 000ffee0 000ffed4 000ffed8)
+100c7d0a    [104]    neg al                                   al                             af cf of pf sf zf al           (mem writes: )
+100c7d0c    [105]    mov cl, 0x47                                                            cl                             (mem writes: )
+100c7d0e    [106]    call 0x100c6d19                                                                                        (mem writes: 000ffec8)
+100c6d19    [107]    clc                                                                     cf                             (mem writes: )
+100c6d1a    [108]    sub esi, -1                              esi                            af cf of pf sf zf esi          (mem writes: )
+100c6d1d    [109]    test dh, 0x18                            dh                             sf zf cf of pf                 (mem writes: )
+100c6d20    [110]    not al                                   al                             al                             (mem writes: )
+100c6d22    [111]    dec ecx                                  ecx                            af of pf sf zf ecx             (mem writes: )
+100c6d23    [112]    add bl, al                               bl al                          af cf of pf sf zf bl           (mem writes: )
+100c6d25    [113]    rcl cx, 3                                cx cf of                       cx cf of                       (mem writes: )
+100c6d29    [114]    rcr ch, 7                                cf ch of                       cf ch of                       (mem writes: )
+100c6d2c    [115]    rcr ch, 2                                cf ch of                       cf ch of                       (mem writes: )
+100c6d2f    [116]    movzx eax, al                            al                             eax                            (mem writes: )
+100c6d32    [117]    mov byte ptr [esp], bl                   bl                                                            (mem writes: 000ffec8)
+100c6d35    [118]    clc                                                                     cf                             (mem writes: )
+100c6d36    [119]    not cl                                   cl                             cl                             (mem writes: )
+100c6d38    [120]    mov ecx, dword ptr [eax*4 + 0x100c7e65]  eax                            ecx                            (mem writes: )
+Removing 000fff08 because esp = 000fff0c
+Removing 000fff04 because esp = 000fff0c
+Removing 000fff00 because esp = 000fff0c
+Removing 000ffefc because esp = 000fff0c
+Removing 000ffef8 because esp = 000fff0c
+Removing 000ffef4 because esp = 000fff0c
+Removing 000ffef0 because esp = 000fff0c
+Removing 000ffeec because esp = 000fff0c
+Removing 000ffee8 because esp = 000fff0c
+Removing 000ffee4 because esp = 000fff0c
+Removing 000ffee0 because esp = 000fff0c
+Removing 000ffedc because esp = 000fff0c
+Removing 000ffed8 because esp = 000fff0c
+Removing 000ffed4 because esp = 000fff0c
+Removing 000ffed0 because esp = 000fff0c
+Removing 000ffecc because esp = 000fff0c
+Removing 000ffec8 because esp = 000fff0c
+100c6d3f    [121]    lea esp, dword ptr [esp + 0x44]                                                                        (mem writes: )
+100c6d43    [122]    jb 0x100c8390                            cf                                                            (mem writes: )
+Path Constraints: (= (_ bv1 1) (_ bv1 1))
+100c6d49    [123]    push 0x968f74f5                                                                                        (mem writes: 000fff08)
+100c6d4e    [124]    push dword ptr [esp]                                                                                   (mem writes: 000fff04)
+100c6d51    [125]    ror ecx, 0xc                             ecx                            ecx cf of                      (mem writes: )
+100c6d54    [126]    test bx, ax                              ax bx                          sf zf cf of pf                 (mem writes: )
+100c6d57    [127]    add ecx, 0                               ecx                            af cf of pf sf zf ecx          (mem writes: )
+100c6d5d    [128]    mov byte ptr [esp + 4], bl               bl                                                            (mem writes: 000fff08)
+100c6d61    [129]    mov dword ptr [esp + 4], ecx             ecx                                                           (mem writes: 000fff08)
+100c6d65    [130]    pushal                                   ebp eax ebx ecx edx edi esi                                   (mem writes: 000ffeec 000ffef0 000ffee4 000ffee8 000fff00 000ffefc 000ffef8 000ffef4)
+100c6d66    [131]    push esp                                                                                               (mem writes: 000ffee0)
+100c6d67    [132]    push dword ptr [esp + 0x28]                                                                            (mem writes: 000ffedc)
+Removing 000fff08 because esp = 000fff0c
+Removing 000fff04 because esp = 000fff0c
+Removing 000fff00 because esp = 000fff0c
+Removing 000ffefc because esp = 000fff0c
+Removing 000ffef8 because esp = 000fff0c
+Removing 000ffef4 because esp = 000fff0c
+Removing 000ffef0 because esp = 000fff0c
+Removing 000ffeec because esp = 000fff0c
+Removing 000ffee8 because esp = 000fff0c
+Removing 000ffee4 because esp = 000fff0c
+Removing 000ffee0 because esp = 000fff0c
+Removing 000ffedc because esp = 000fff0c
+100c6d6b    [133]    ret 0x2c                                                                                               (mem writes: )
+af = 127, of = 127, zf = 127, edi = 80, cf = 127, eax = 116, pf = 127, ebp = 73, ebx = 112, sf = 127, esi = 108, ecx = 127
+000fffec = 22, 000fff9c = 65, 000fffa0 = 62, 000ffff0 = 17, 000fffa4 = 62, 000fffa8 = 62, 000fffdc = 35, 000fffac = 62, 000fffb0 = 62, 000fffb4 = 62, 000fffb8 = 62, 000ffff4 = 14, 000fffbc = 43, 000fffc0 = 43, 000fffc4 = 43, 000fffc8 = 43, 000fffcc = 54, 000fffd0 = 51, 000ffff8 = 7, 000fffd4 = 48, 000fffd8 = 45, 000fffe4 = 30, 000fffe0 = 32, 000fffe8 = 25, 000ffffc = 3
+Good instructions: [3, 7, 14, 17, 22, 25, 30, 32, 35, 41, 42, 43, 44, 45, 46, 48, 49, 50, 51, 52, 53, 54, 57, 58, 59, 60, 61, 62, 64, 65, 68, 73, 80, 83, 88, 91, 94, 99, 104, 108, 110, 112, 116, 120, 125, 127, 129, 132, 133]
+[003]    mov dword ptr [svar0], 0x6fdd8840
+[007]    mov dword ptr [svar1], 0x2383346b
+[014]    mov dword ptr [svar2], eax
+[017]    mov dword ptr [svar3], edx
+[022]    mov dword ptr [svar4], ebp
+[025]    mov dword ptr [svar5], ebx
+[030]    mov dword ptr [svar6], esi
+[032]    mov dword ptr [svar7], edi
+[035]    mov dword ptr [svar8], ebx
+[041]    bswap si
+[042]    not si
+[043]    pushal
+[044]    pushfd
+[045]    pop dword ptr [svar9]
+[046]    shld si, di, cl
+[048]    mov dword ptr [svar10], ecx
+[049]    bsf di, si
+[050]    push dword ptr [0x100c6d15]
+[051]    pop dword ptr [svar11]
+[052]    movzx cx, bl
+[053]    xadd edi, ebp
+[054]    mov dword ptr [svar12], 0
+[057]    mov esi, dword ptr [svar0]
+[058]    bts di, ax
+[059]    btr di, 4
+[060]    add esi, 0x1644be2b
+[061]    neg di
+[062]    pushal
+[064]    xor esi, 0x69d1f651
+[065]    mov word ptr [svar13], 0xfaa6
+[068]    not esi
+[073]    lea ebp, dword ptr [svar12]
+[080]    lea edi, dword ptr [svar14]
+[083]    mov ebx, esi
+[088]    add esi, dword ptr [ebp]
+[091]    mov al, byte ptr [esi]
+[094]    add al, bl
+[099]    rol al, 7
+[104]    neg al
+[108]    sub esi, -1
+[110]    not al
+[112]    add bl, al
+[116]    movzx eax, al
+[120]    mov ecx, dword ptr [eax*4 + 0x100c7e65]
+[125]    ror ecx, 0xc
+[127]    add ecx, 0
+[129]    mov dword ptr [svar15], ecx
+[132]    push dword ptr [svar15]
+[133]    ret 0x2c
